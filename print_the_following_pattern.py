@@ -1,5 +1,8 @@
 n=int(input())
-c=[]
 for i in range(1,n+1):
-    c.append(str(i))
-    print("".join(c))
+    for j in range(1,n+1):
+        if i==j or j==1 or j==n :
+            print('*',end=' ')
+        else:
+            print(' ',end=' ')
+    print()
